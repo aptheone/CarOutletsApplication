@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>CarShowroomApplication</title>
 </head>
 <body>
-		<h1>Available Brands</h1>
+		<h1>Available Models ::</h1>
 		<%
 List result= (List) request.getAttribute("brands");
 Iterator it = result.iterator();

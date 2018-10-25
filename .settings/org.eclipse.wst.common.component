@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="CarOutletsApplication-0.0.1-SNAPSHOT">
-        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="CarOutletsApplication"/>
-        <property name="java-output-path" value="/CarOutletsApplication/build/classes"/>
-    </wb-module>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+  <wb-module deploy-name="CarOutletsApplication">
+    <property name="context-root" value="CarOutletsApplication"/>
+    <wb-resource deploy-path="/" source-path="WebContent"/>
+    <property name="java-output-path" value="/target/classes"/>
+    <dependent-module archiveName="servlet-api-2.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="javax.servlet-api-3.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src"/>
+  </wb-module>
 </project-modules>
